@@ -1,0 +1,50 @@
+server:
+  port: 8081
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: login-service
+            uri: lb://login-service
+            predicates:
+              - Path=/logins/**
+            filters:
+              - RewritePath=/(?<logins>.*), /$\{logins}
+
+        - id: account-service
+          uri: lb://account-service
+          predicates:
+            - Path=/accounts/**
+          filters:
+            - RewritePath=/(?<accounts>.*), /$\{accounts}
+
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/users/**
+          filters:
+            - RewritePath=/(?<users>.*), /$\{users}
+
+        - id: event-service
+          uri: lb://event-service
+          predicates:
+            - Path=/events/**
+          filters:
+            - RewritePath=/(?<events>.*), /$\{events}
+
+  application:
+    name: gateway
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/
