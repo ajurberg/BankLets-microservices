@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc9c00e-ddb3-4ab6-aa4e-385fe53e8eeb" name="Changes" comment="Update of discovery-server">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d2f5d1978e5f519100a679c4109f89296278badc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="0bc9c00e-ddb3-4ab6-aa4e-385fe53e8eeb" name="Changes" comment="Communication with discovery-server">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/c/4c64c670eaef2f68b75a2966b6bdd02437e10a22" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +134,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AccountServiceApplication">
+  <component name="RunManager" selected="Spring Boot.TransactionServiceApplication">
     <configuration name="AccountServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="account-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.letcode.accountservice.AccountServiceApplication" />
@@ -215,7 +209,7 @@
       <workItem from="1631724354863" duration="2194000" />
       <workItem from="1631756342886" duration="5384000" />
       <workItem from="1631917146201" duration="7819000" />
-      <workItem from="1632058703753" duration="28037000" />
+      <workItem from="1632058703753" duration="28799000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1631921179291</created>
@@ -280,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632242416907</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Communication with discovery-server">
+      <created>1632247091061</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1632247091061</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +307,8 @@
     <MESSAGE value="Updates of transaction-service" />
     <MESSAGE value="Creation of discovery-server" />
     <MESSAGE value="Update of discovery-server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update of discovery-server" />
+    <MESSAGE value="Communication with discovery-server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Communication with discovery-server" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
