@@ -4,83 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc9c00e-ddb3-4ab6-aa4e-385fe53e8eeb" name="Changes" comment="Updates of transaction-service">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/java/br/com/letscode/discoveryserver/DiscoveryServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/test/java/br/com/letscode/discoveryserver/DiscoveryServerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/TransactionServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/account/AccountClientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/account/AccountDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/exception/FailedDependencyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/ConverterTransactionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/user/UserClientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/user/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/test/java/br/com/letscode/transactionservice/TransactionServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/test/java/br/com/letscode/transactionservice/transaction/TransactionRestControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/test/java/br/com/letscode/transactionservice/transaction/TransactionServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_core_10_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_slf4j_10_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_3_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_spring_3_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_3_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_3_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/afaf327a6435d2b8827595dd09405e8490f29529" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/TransactionServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/account/AccountClientRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/account/AccountDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/exception/FailedDependencyException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/transaction/ConverterTransactionDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/transaction/Transaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionRestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/user/UserClientRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/user/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/test/java/br/com/letscode/transactionservice/TransactionServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/test/java/br/com/letscode/transactionservice/transaction/TransactionRestControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/test/java/br/com/letscode/transactionservice/transaction/TransactionServiceTest.java" beforeDir="false" />
+    <list default="true" id="0bc9c00e-ddb3-4ab6-aa4e-385fe53e8eeb" name="Changes" comment="Creation of discovery-server">
+      <change beforePath="$PROJECT_DIR$/discovery-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/java/br/com/letscode/discoveryserver/DiscoveryServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/java/br/com/letscode/discoveryserver/DiscoveryServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/test/java/br/com/letscode/discoveryserver/DiscoveryServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/test/java/br/com/letscode/discoveryserver/DiscoveryServerApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +210,7 @@
       <workItem from="1631724354863" duration="2194000" />
       <workItem from="1631756342886" duration="5384000" />
       <workItem from="1631917146201" duration="7819000" />
-      <workItem from="1632058703753" duration="24521000" />
+      <workItem from="1632058703753" duration="24741000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1631921179291</created>
@@ -333,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632235043145</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Creation of discovery-server">
+      <created>1632242130199</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1632242130199</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +292,8 @@
     <MESSAGE value="Updates of account-service and user-service" />
     <MESSAGE value="Updates of account-service and transaction-service" />
     <MESSAGE value="Updates of transaction-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates of transaction-service" />
+    <MESSAGE value="Creation of discovery-server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation of discovery-server" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
