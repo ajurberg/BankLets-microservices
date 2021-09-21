@@ -11,7 +11,7 @@ interface AccountService {
     List<AccountDTO> listAll();
     AccountDTO getById(Long accountId);
 
-    BigDecimal viewBalance(Long accountId);
+    BigDecimal viewBalance(Long accountId, AccountDTO accountDTO);
     void deposit(BigDecimal amount, Long accountId);
     void withdraw(BigDecimal amount, Long accountId);
     void transfer(BigDecimal amount, Long withdrawalAccountId, Long receivingAccountId);

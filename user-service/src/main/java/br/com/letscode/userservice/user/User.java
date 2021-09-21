@@ -27,17 +27,12 @@ class User {
     private String userName;
     private String userPassword;
 
-    public User(Long userId, String userName) {
-        this.userId = userId;
-        this.userName = userName;
-    }
-
     static User of(UserDTO userDTO) {
-        return new User(userDTO.getUserId(), userDTO.getUserName());
+        return new User(userDTO.getUserId(), userDTO.getUserName(), userDTO.getUserPassword());
     }
 
     static UserDTO parseToDtoMono(User user) {
-        return new UserDTO(user.getUserId(), user.getUserName());
+        return new UserDTO(user.getUserId(), user.getUserName(), user.getUserPassword());
     }
 
     static List<UserDTO> parseToDtoList(List<User> userList) {

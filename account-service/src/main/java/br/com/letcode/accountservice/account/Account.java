@@ -1,6 +1,7 @@
 package br.com.letcode.accountservice.account;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,12 +11,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.math.BigDecimal;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Entity
 @Getter
 @Setter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 class Account {
@@ -24,12 +27,15 @@ class Account {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long accountId;
     private BigDecimal accountBalance;
-    private boolean status;
     private Long userId;
+    private Date openingDate;
+    private Date closingDate;
+    private boolean status;
 
     static Account of(AccountDTO accountDTO) {
-        return new Account(accountDTO.getAccountId(),
-                accountDTO.getAccountBalance(), accountDTO.isStatus(), accountDTO.getUserId());
+        return new Account(accountDTO.getAccountId(), accountDTO.getAccountBalance(),
+                accountDTO.getUserId(), accountDTO.getOpeningDate(), accountDTO.getClosingDate(),
+                accountDTO.isStatus());
     }
 
     static List<AccountDTO> parseToDtoList(List<Account> accountList) {
@@ -37,7 +43,9 @@ class Account {
     }
 
     static AccountDTO parseToDtoMono(Account account) {
-        return new AccountDTO(account.getAccountId(), account.getAccountBalance(), account.isStatus(), account.getUserId());
+        return new AccountDTO(account.getAccountId(), account.getAccountBalance(),
+                account.getUserId(), account.getOpeningDate(), account.getClosingDate(),
+                account.isStatus());
     }
 
     static List<Account> ofList(List<AccountDTO> accountDTOList) {

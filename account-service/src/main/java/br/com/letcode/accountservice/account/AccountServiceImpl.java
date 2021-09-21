@@ -71,7 +71,7 @@ class AccountServiceImpl implements AccountService {
         return accountRepository.findById(accountId).orElse(null);
     }
 
-    public BigDecimal viewBalance(Long accountId) {
+    public BigDecimal viewBalance(Long accountId, AccountDTO accountDTO) {
         Account account = findAccountById(accountId);
         log.info("viewBalance method of AccountService ran successfully.");
         return account.getAccountBalance();
