@@ -4,31 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc9c00e-ddb3-4ab6-aa4e-385fe53e8eeb" name="Changes" comment="Updates of account-service and user-service">
-      <change afterPath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/exception/FailedDependencyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/transaction/ConverterTransactionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/4/644c9fb7d8de0187867e21e679beccc6bb613940" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e5392c1d6b0a37990ec93c6eee682dad516432e4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec0492a91efd7c37ac10b45d3d7d0886a389ede6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed6eb559d27265cfe2d5f920dd3a10f106af3318" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="0bc9c00e-ddb3-4ab6-aa4e-385fe53e8eeb" name="Changes" comment="Updates of transaction-service">
+      <change afterPath="$PROJECT_DIR$/event-service/src/test/java/br/com/letscode/transactionservice/transaction/TransactionRestControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/event-service/src/test/java/br/com/letscode/transactionservice/transaction/TransactionServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a58f3ce17887e8da0e2a7acb8c58875ed84f6629" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/eventservice/EventServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/EventServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/eventservice/account/AccountClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/account/AccountClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/eventservice/account/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/account/AccountDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/eventservice/event/ConverterEventDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/eventservice/event/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/transaction/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/eventservice/event/EventDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/eventservice/event/EventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/eventservice/user/UserClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/user/UserClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/eventservice/user/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/user/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/test/java/br/com/letscode/eventservice/EventServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/test/java/br/com/letscode/transactionservice/TransactionServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/EventServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/br/com/letscode/transactionservice/TransactionServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +119,7 @@
     </configuration>
     <configuration name="EventServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="transaction-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.letscode.transactionservice.EventServiceApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.letscode.transactionservice.TransactionServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,7 +170,7 @@
       <workItem from="1631724354863" duration="2194000" />
       <workItem from="1631756342886" duration="5384000" />
       <workItem from="1631917146201" duration="7819000" />
-      <workItem from="1632058703753" duration="17208000" />
+      <workItem from="1632058703753" duration="19515000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1631921179291</created>
@@ -226,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632189902382</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updates of account-service and transaction-service">
+      <created>1632232755215</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1632232755215</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +235,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Updates of account-service and user-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates of account-service and user-service" />
+    <MESSAGE value="Updates of account-service and transaction-service" />
+    <MESSAGE value="Updates of transaction-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates of transaction-service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
