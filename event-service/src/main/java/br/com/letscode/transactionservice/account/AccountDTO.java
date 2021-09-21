@@ -1,4 +1,4 @@
-package br.com.letscode.eventservice.account;
+package br.com.letscode.transactionservice.account;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

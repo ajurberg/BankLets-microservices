@@ -1,7 +1,7 @@
-package br.com.letscode.eventservice.event;
+package br.com.letscode.transactionservice.transaction;
 
-import br.com.letscode.eventservice.account.AccountDTO;
-import br.com.letscode.eventservice.user.UserDTO;
+import br.com.letscode.transactionservice.account.AccountDTO;
+import br.com.letscode.transactionservice.user.UserDTO;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -17,22 +18,28 @@ import java.util.stream.Collectors;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class EventDTO implements Serializable {
+class TransactionDTO implements Serializable {
 
     private static final long serialVersionUID = -7798816862560204775L;
 
     private Long id;
+    private BigDecimal amount;
     private UserDTO user;
     private List<AccountDTO> accountList;
 
     static List<Long> convertAccountDTOListToAccountIdList(List<AccountDTO> accountList) {
-        return accountList.stream().map(AccountDTO::getAccountId).collect(Collectors.toList());
+        return accountList.stream()
+                .map(AccountDTO::getAccountId)
+                .collect(Collectors.toList());
     }
 
     static List<AccountDTO> convertAccountIdListToAccountDTOList(List<Long> accountIdList) {
         return accountIdList.stream()
-                .map(accountId -> AccountDTO.builder().accountId(accountId).build())
-                .collect(Collectors.toList());
+                .map(accountId ->
+                        AccountDTO.builder()
+                                .accountId(accountId)
+                                .build()
+                ).collect(Collectors.toList());
     }
 
 }

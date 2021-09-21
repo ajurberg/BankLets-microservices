@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>br.com.letscode</groupId>
-    <artifactId>event-service</artifactId>
+    <artifactId>transaction-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>event-service</name>
-    <description>event-service</description>
+    <name>transaction-service</name>
+    <description>transaction-service</description>
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>2020.0.3</spring-cloud.version>

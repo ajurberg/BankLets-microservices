@@ -1,4 +1,4 @@
-package br.com.letscode.eventservice;
+package br.com.letscode.transactionservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

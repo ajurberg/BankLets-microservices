@@ -1,6 +1,5 @@
 package br.com.letcode.accountservice.account;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 interface AccountService {
@@ -10,10 +9,5 @@ interface AccountService {
     AccountDTO update(Long accountId, AccountDTO accountDTO);
     List<AccountDTO> listAll();
     AccountDTO getById(Long accountId);
-
-    BigDecimal viewBalance(Long accountId, AccountDTO accountDTO);
-    void deposit(BigDecimal amount, Long accountId);
-    void withdraw(BigDecimal amount, Long accountId);
-    void transfer(BigDecimal amount, Long withdrawalAccountId, Long receivingAccountId);
 
 }

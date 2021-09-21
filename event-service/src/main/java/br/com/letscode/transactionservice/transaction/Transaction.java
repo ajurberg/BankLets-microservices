@@ -1,4 +1,4 @@
-package br.com.letscode.eventservice.event;
+package br.com.letscode.transactionservice.transaction;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -21,7 +21,7 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 @Entity
-class Event {
+class Transaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

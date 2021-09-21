@@ -51,10 +51,6 @@ Zaccount-service/src/main/java/br/com/letcode/accountservice/AccountServiceAppli
 caccount-service/src/test/java/br/com/letcode/accountservice/AccountServiceImplApplicationTests.java,f\f\ff4db32642b6dbd9d26c96c97aa918fbe9a883aa
 G
 account-service/pom.xml,a\f\afaf327a6435d2b8827595dd09405e8490f29529
-ç
-]event-service/src/main/java/br/com/letscode/eventservice/account/AccountClientRepository.java,6\4\644c9fb7d8de0187867e21e679beccc6bb613940
-Ä
-Pevent-service/src/main/java/br/com/letscode/eventservice/account/AccountDTO.java,e\d\ed6eb559d27265cfe2d5f920dd3a10f106af3318
 Ö
 Uevent-service/src/main/java/br/com/letscode/eventservice/event/ConverterEventDTO.java,9\6\9663e9762625f77ca0ae7441f6bc1651fcd533ee
 y
@@ -63,16 +59,10 @@ Ievent-service/src/main/java/br/com/letscode/eventservice/event/Event.java,1\f\
 Levent-service/src/main/java/br/com/letscode/eventservice/event/EventDTO.java,a\8\a823f283b8d33bafa82cecd70b04c3118b4ebf30
 É
 Sevent-service/src/main/java/br/com/letscode/eventservice/event/EventRepository.java,6\c\6cba06d7eb440fe5206581f0928b91eafc07828e
-á
-Wevent-service/src/main/java/br/com/letscode/eventservice/user/UserClientRepository.java,e\5\e5392c1d6b0a37990ec93c6eee682dad516432e4
-z
-Jevent-service/src/main/java/br/com/letscode/eventservice/user/UserDTO.java,e\c\ec0492a91efd7c37ac10b45d3d7d0886a389ede6
 Ö
 Uevent-service/src/main/java/br/com/letscode/eventservice/EventServiceApplication.java,0\9\095257b3d2555bc794bdde5724fa19174506ca45
 ä
 Zevent-service/src/test/java/br/com/letscode/eventservice/EventServiceApplicationTests.java,0\b\0b2f0b9e8ad217cfc13e55d36c35d3240627a650
-E
-event-service/pom.xml,a\5\a58f3ce17887e8da0e2a7acb8c58875ed84f6629
 à
 Xgateway-server/src/main/java/br/com/letscode/gatewayserver/GatewayServerApplication.java,2\3\23bcf2d315084dd5b0738452725c87fcb279e374
 ç

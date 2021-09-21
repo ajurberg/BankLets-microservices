@@ -1,4 +1,4 @@
-package br.com.letscode.eventservice.user;
+package br.com.letscode.transactionservice.user;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface UserClientRepository {
 
     @GetMapping("/users/{userId}")
-    UserDTO getById(@PathVariable Long userId);
+    UserDTO getById(@PathVariable("userId") Long userId);
 
 }

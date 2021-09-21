@@ -9,25 +9,25 @@
         <outputRelativeToContentRoot value="true" />
         <module name="security-login" />
         <module name="gateway-server" />
+        <module name="transaction-service" />
         <module name="user-service" />
         <module name="account-service" />
-        <module name="event-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="account-service" target="11" />
-      <module name="event-service" target="11" />
       <module name="gateway-server" target="11" />
       <module name="security-login" target="11" />
+      <module name="transaction-service" target="11" />
       <module name="user-service" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="account-service" options="-parameters" />
-      <module name="event-service" options="-parameters" />
       <module name="gateway-server" options="-parameters" />
       <module name="security-login" options="-parameters" />
+      <module name="transaction-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>
