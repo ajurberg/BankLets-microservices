@@ -16,6 +16,7 @@ import java.math.BigDecimal;
 public class AccountDTO {
 
     private static final long serialVersionUID = -6030269862170249309L;
+
     private Long accountId;
     private BigDecimal accountBalance;
     private boolean status;

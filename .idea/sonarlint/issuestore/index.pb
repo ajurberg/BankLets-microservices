@@ -49,8 +49,6 @@ gaccount-service/src/main/java/br/com/letcode/accountservice/exception/Insuffici
 Zaccount-service/src/main/java/br/com/letcode/accountservice/AccountServiceApplication.java,a\3\a34c56344341968b930f29b0677ec4fab6eb4087
 “
 caccount-service/src/test/java/br/com/letcode/accountservice/AccountServiceImplApplicationTests.java,f\f\ff4db32642b6dbd9d26c96c97aa918fbe9a883aa
-G
-account-service/pom.xml,a\f\afaf327a6435d2b8827595dd09405e8490f29529
 …
 Uevent-service/src/main/java/br/com/letscode/eventservice/event/ConverterEventDTO.java,9\6\9663e9762625f77ca0ae7441f6bc1651fcd533ee
 y
