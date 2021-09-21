@@ -69,11 +69,7 @@ F
 gateway-server/pom.xml,c\1\c1378869ff2e9e7ab602092a82de08a23a6c93f3
 ê
 `user-service/src/main/java/br/com/letscode/userservice/exception/UserAlreadyExistsException.java,1\c\1c5698602674c71d10f55eb65363391c214b9d09
-Ä
-Puser-service/src/main/java/br/com/letscode/userservice/user/UserServiceImpl.java,4\c\4c64c670eaef2f68b75a2966b6bdd02437e10a22
 Ç
 Ruser-service/src/main/java/br/com/letscode/userservice/UserServiceApplication.java,9\a\9a234c981656300126ce52ba5d245db9b0825e4d
 á
 Wuser-service/src/test/java/br/com/letscode/userservice/UserServiceApplicationTests.java,c\0\c04fecb11177fea4465c36ab8bc94dd64d066a57
-D
-user-service/pom.xml,d\2\d2f5d1978e5f519100a679c4109f89296278badc

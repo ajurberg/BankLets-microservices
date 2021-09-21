@@ -29,6 +29,7 @@ class UserServiceImpl implements UserService {
 
     @Override
     public void delete(Long userId) {
+        log.info("delete method of UserService ran successfully.");
         userRepository.deleteById(userId);
     }
 
@@ -37,6 +38,7 @@ class UserServiceImpl implements UserService {
         if (userRepository.findById(userId).isPresent()) {
             userDTO.setUserId(userId);
             User user = User.of(userDTO);
+            log.info("update method of UserService ran successfully.");
             return User.parseToDtoMono(userRepository.save(user));
         } else {
             throw new NoSuchElementException("User ID not found.");
@@ -45,11 +47,13 @@ class UserServiceImpl implements UserService {
 
     @Override
     public List<UserDTO> listAll() {
+        log.info("listAll method of UserService ran successfully.");
         return User.parseToDtoList(userRepository.findAll());
     }
 
     @Override
     public UserDTO getById(Long userId) {
+        log.info("getById method of UserService ran successfully.");
         return User.parseToDtoMono(userRepository.findById(userId)
                 .orElseThrow(() -> new NoSuchElementException("User ID not found."))
         );
