@@ -26,12 +26,12 @@ spring:
           filters:
             - RewritePath=/(?<users>.*), /$\{users}
 
-        - id: event-service
-          uri: lb://event-service
+        - id: transaction-service
+          uri: lb://transaction-service
           predicates:
             - Path=/events/**
           filters:
-            - RewritePath=/(?<events>.*), /$\{events}
+            - RewritePath=/(?<transactions>.*), /$\{transactions}
 
   application:
     name: gateway
@@ -47,4 +47,4 @@ eureka:
     region: default
     registryFetchIntervalSeconds: 5
     serviceUrl:
-      defaultZone: http://localhost:8082/eureka/
+      defaultZone: http://localhost:8761/eureka/

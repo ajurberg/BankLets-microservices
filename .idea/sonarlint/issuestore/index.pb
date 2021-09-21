@@ -61,8 +61,6 @@ Sevent-service/src/main/java/br/com/letscode/eventservice/event/EventRepository.
 Uevent-service/src/main/java/br/com/letscode/eventservice/EventServiceApplication.java,0\9\095257b3d2555bc794bdde5724fa19174506ca45
 ä
 Zevent-service/src/test/java/br/com/letscode/eventservice/EventServiceApplicationTests.java,0\b\0b2f0b9e8ad217cfc13e55d36c35d3240627a650
-à
-Xgateway-server/src/main/java/br/com/letscode/gatewayserver/GatewayServerApplication.java,2\3\23bcf2d315084dd5b0738452725c87fcb279e374
 ç
 ]gateway-server/src/test/java/br/com/letscode/gatewayserver/GatewayServerApplicationTests.java,3\8\38749496122e32860ff91ad093b82ca968c252cd
 F
