@@ -32,10 +32,15 @@ class Account {
     private Date closingDate;
     private boolean status;
 
+    // TODO Evaluate if setStatus makes sense
     static Account of(AccountDTO accountDTO) {
-        return new Account(accountDTO.getAccountId(), accountDTO.getAccountBalance(),
+        var account = new Account(accountDTO.getAccountId(), accountDTO.getAccountBalance(),
                 accountDTO.getUserId(), accountDTO.getOpeningDate(), accountDTO.getClosingDate(),
                 accountDTO.isStatus());
+        if (account.closingDate != null ) {
+            account.setStatus(false);
+        }
+        return account;
     }
 
     static List<AccountDTO> parseToDtoList(List<Account> accountList) {
