@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc9c00e-ddb3-4ab6-aa4e-385fe53e8eeb" name="Changes" comment="Update of Account and TransactionRestController">
-      <change afterPath="$PROJECT_DIR$/Classe UML-BankLets.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/exception/InsufficientBalanceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/exception/WrongAmountException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c5698602674c71d10f55eb65363391c214b9d09" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="0bc9c00e-ddb3-4ab6-aa4e-385fe53e8eeb" name="Changes" comment="Update of account-service and transaction-service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/account/AccountClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/account/AccountClientRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +74,7 @@
       <map>
         <entry key="JPA Inspector" value="false" />
         <entry key="JPA Palette" value="false" />
-        <entry key="JPA Structure" value="true" />
+        <entry key="JPA Structure" value="false" />
       </map>
     </option>
   </component>
@@ -220,7 +212,7 @@
       <workItem from="1631724354863" duration="2194000" />
       <workItem from="1631756342886" duration="5384000" />
       <workItem from="1631917146201" duration="7819000" />
-      <workItem from="1632058703753" duration="52533000" />
+      <workItem from="1632058703753" duration="56241000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1631921179291</created>
@@ -313,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632280190644</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Update of account-service and transaction-service">
+      <created>1632539944677</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1632539944677</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +342,8 @@
     <MESSAGE value="Update of transaction-service application.yml" />
     <MESSAGE value="Update of gateway-server" />
     <MESSAGE value="Update of Account and TransactionRestController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update of Account and TransactionRestController" />
+    <MESSAGE value="Update of account-service and transaction-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update of account-service and transaction-service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

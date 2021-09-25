@@ -3,12 +3,15 @@ package br.com.letscode.transactionservice.transaction;
 import br.com.letscode.transactionservice.account.AccountClientRepository;
 import br.com.letscode.transactionservice.account.AccountDTO;
 import br.com.letscode.transactionservice.exception.FailedDependencyException;
+import br.com.letscode.transactionservice.exception.InsufficientBalanceException;
+import br.com.letscode.transactionservice.exception.WrongAmountException;
 import br.com.letscode.transactionservice.user.UserClientRepository;
 import br.com.letscode.transactionservice.user.UserDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
@@ -18,6 +21,8 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 @Service
 public class TransactionServiceImpl implements TransactionService {
+
+    private static final String INSUFFICIENT_FUNDS_MESSAGE = "Insufficient funds. Operation failed.";
 
     private final TransactionRepository transactionRepository;
     private final AccountClientRepository accountClientRepository;
@@ -54,6 +59,48 @@ public class TransactionServiceImpl implements TransactionService {
         return transactionList.stream()
                 .map(this::buildDTO)
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public BigDecimal viewBalance(Long accountId) {
+        AccountDTO accountDTO = accountClientRepository.getById(accountId);
+        return accountDTO.getAccountBalance();
+    }
+
+    @Override
+    public void deposit(Long accountId, BigDecimal amount) {
+        AccountDTO accountDTO = accountClientRepository.getById(accountId);
+        if (amount.compareTo(BigDecimal.ZERO) > 0) {
+            accountDTO.setAccountBalance(accountDTO.getAccountBalance().add(amount));
+        } else {
+            throw new WrongAmountException(INSUFFICIENT_FUNDS_MESSAGE);
+        }
+        accountClientRepository.save(accountDTO.getAccountId());
+    }
+
+    @Override
+    public void withdraw(Long accountId, BigDecimal amount) {
+        AccountDTO accountDTO = accountClientRepository.getById(accountId);
+        if (amount.compareTo(accountDTO.getAccountBalance()) < 0) {
+            accountDTO.setAccountBalance(accountDTO.getAccountBalance().subtract(amount));
+        } else {
+            throw new InsufficientBalanceException(INSUFFICIENT_FUNDS_MESSAGE);
+        }
+        accountClientRepository.save(accountDTO.getAccountId());
+    }
+
+    @Override
+    public void transfer(Long withdrawalAccountId, Long receivingAccountId, BigDecimal amount) {
+        AccountDTO withdrawalAccountDTO = accountClientRepository.getById(withdrawalAccountId);
+        AccountDTO receivingAccountDTO = accountClientRepository.getById(receivingAccountId);
+        if (amount.compareTo(withdrawalAccountDTO.getAccountBalance()) < 0) {
+            withdrawalAccountDTO.setAccountBalance(withdrawalAccountDTO.getAccountBalance().subtract(amount));
+            receivingAccountDTO.setAccountBalance(receivingAccountDTO.getAccountBalance().add(amount));
+        } else {
+            throw new InsufficientBalanceException(INSUFFICIENT_FUNDS_MESSAGE);
+        }
+        accountClientRepository.save(withdrawalAccountDTO.getAccountId());
+        accountClientRepository.save(receivingAccountDTO.getAccountId());
     }
 
     /**
