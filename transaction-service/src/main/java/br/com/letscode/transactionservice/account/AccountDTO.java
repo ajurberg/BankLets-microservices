@@ -19,7 +19,7 @@ public class AccountDTO {
 
     private Long accountId;
     private BigDecimal accountBalance;
-    private boolean status;
+    private String status;
     private Long userId;
 
 }

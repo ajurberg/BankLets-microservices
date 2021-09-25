@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc9c00e-ddb3-4ab6-aa4e-385fe53e8eeb" name="Changes" comment="Update of account-service and transaction-service">
+    <list default="true" id="0bc9c00e-ddb3-4ab6-aa4e-385fe53e8eeb" name="Changes" comment="Fix of transaction-service (Controller and Service)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/account/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/account/AccountDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +136,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.TransactionServiceApplication">
+  <component name="RunManager" selected="Spring Boot.GatewayServerApplication">
     <configuration name="AccountServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="account-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.letcode.accountservice.AccountServiceApplication" />
@@ -212,7 +211,7 @@
       <workItem from="1631724354863" duration="2194000" />
       <workItem from="1631756342886" duration="5384000" />
       <workItem from="1631917146201" duration="7819000" />
-      <workItem from="1632058703753" duration="56241000" />
+      <workItem from="1632058703753" duration="57976000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1631921179291</created>
@@ -312,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632539944677</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fix of transaction-service (Controller and Service)">
+      <created>1632596914630</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1632596914630</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +349,8 @@
     <MESSAGE value="Update of gateway-server" />
     <MESSAGE value="Update of Account and TransactionRestController" />
     <MESSAGE value="Update of account-service and transaction-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update of account-service and transaction-service" />
+    <MESSAGE value="Fix of transaction-service (Controller and Service)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix of transaction-service (Controller and Service)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

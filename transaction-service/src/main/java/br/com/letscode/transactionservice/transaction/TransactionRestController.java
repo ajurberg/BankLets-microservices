@@ -1,9 +1,5 @@
 package br.com.letscode.transactionservice.transaction;
 
-import br.com.letscode.transactionservice.account.AccountClientRepository;
-import br.com.letscode.transactionservice.account.AccountDTO;
-import br.com.letscode.transactionservice.exception.InsufficientBalanceException;
-import br.com.letscode.transactionservice.exception.WrongAmountException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -27,7 +23,6 @@ import java.util.List;
 class TransactionRestController {
 
     private final TransactionService transactionService;
-    private final AccountClientRepository accountClientRepository;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
