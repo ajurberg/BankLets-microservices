@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Getter
@@ -19,10 +20,11 @@ class AccountDTO implements Serializable {
 
     private static final long serialVersionUID = -6030269862170249309L;
     private Long accountId;
+    private AccountTypeEnum type;
     private BigDecimal accountBalance;
     private Long userId;
-    private Date openingDate;
-    private Date closingDate;
-    private boolean status;
+    private LocalDate openingDate;
+    private LocalDate closingDate;
+    private AccountStatusEnum status;
 
 }

@@ -7,11 +7,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -26,19 +28,25 @@ class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long accountId;
+
+    @Enumerated(EnumType.STRING)
+    private AccountTypeEnum type;
+
+    private LocalDate openingDate;
+    private LocalDate closingDate;
+
     private BigDecimal accountBalance;
     private Long userId;
-    private Date openingDate;
-    private Date closingDate;
-    private boolean status;
 
-    // TODO Evaluate if setStatus makes sense
+    @Enumerated(EnumType.STRING)
+    private AccountStatusEnum status;
+
     static Account of(AccountDTO accountDTO) {
-        var account = new Account(accountDTO.getAccountId(), accountDTO.getAccountBalance(),
-                accountDTO.getUserId(), accountDTO.getOpeningDate(), accountDTO.getClosingDate(),
-                accountDTO.isStatus());
+        var account = new Account(accountDTO.getAccountId(),accountDTO.getType(), accountDTO.getOpeningDate(),
+                accountDTO.getClosingDate(), accountDTO.getAccountBalance(), accountDTO.getUserId(),
+                accountDTO.getStatus());
         if (account.closingDate != null ) {
-            account.setStatus(false);
+            account.setStatus(AccountStatusEnum.ACTIVE);
         }
         return account;
     }
@@ -48,9 +56,9 @@ class Account {
     }
 
     static AccountDTO parseToDtoMono(Account account) {
-        return new AccountDTO(account.getAccountId(), account.getAccountBalance(),
+        return new AccountDTO(account.getAccountId(), account.getType(), account.getAccountBalance(),
                 account.getUserId(), account.getOpeningDate(), account.getClosingDate(),
-                account.isStatus());
+                account.getStatus());
     }
 
     static List<Account> ofList(List<AccountDTO> accountDTOList) {

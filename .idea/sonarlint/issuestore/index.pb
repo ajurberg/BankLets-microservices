@@ -65,8 +65,6 @@ Zevent-service/src/test/java/br/com/letscode/eventservice/EventServiceApplicatio
 ]gateway-server/src/test/java/br/com/letscode/gatewayserver/GatewayServerApplicationTests.java,3\8\38749496122e32860ff91ad093b82ca968c252cd
 F
 gateway-server/pom.xml,c\1\c1378869ff2e9e7ab602092a82de08a23a6c93f3
-ê
-`user-service/src/main/java/br/com/letscode/userservice/exception/UserAlreadyExistsException.java,1\c\1c5698602674c71d10f55eb65363391c214b9d09
 Ç
 Ruser-service/src/main/java/br/com/letscode/userservice/UserServiceApplication.java,9\a\9a234c981656300126ce52ba5d245db9b0825e4d
 á
