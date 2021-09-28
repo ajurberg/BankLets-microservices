@@ -25,7 +25,7 @@ class TransactionDTO implements Serializable {
     private Long id;
     private BigDecimal amount;
     private UserDTO user;
-    private List<AccountDTO> accountList;
+    private transient List<AccountDTO> accountList;
 
     static List<Long> convertAccountDTOListToAccountIdList(List<AccountDTO> accountList) {
         return accountList.stream()
