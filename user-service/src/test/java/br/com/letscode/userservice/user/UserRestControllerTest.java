@@ -1,5 +1,6 @@
 package br.com.letscode.userservice.user;
 
+import br.com.letscode.userservice.exception.UserAlreadyExistsException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -36,8 +37,8 @@ class UserRestControllerTest {
         UserDTO userDTO = new UserDTO(1L, "user1", "1234");
         String userJSON = new ObjectMapper().writeValueAsString(userDTO);
         mockMvc.perform(post(URL_USERS)
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(userJSON))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(userJSON))
                 .andExpect(status().isCreated())
                 .andExpect(content().json(userJSON));
         verify(userService, times(1)).save(userDTO);
@@ -49,7 +50,7 @@ class UserRestControllerTest {
         Long userId = 1L;
         String urlDelete = URL_USERS + "/{userId}";
         mockMvc.perform(MockMvcRequestBuilders.delete(urlDelete, userId)
-                .contentType(MediaType.APPLICATION_JSON))
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNoContent());
         verify(userService, times(1)).delete(userId);
     }
@@ -63,8 +64,8 @@ class UserRestControllerTest {
         String urlUpdate = URL_USERS + "/{userId}";
         String jsonUser = new ObjectMapper().writeValueAsString(userDTO);
         mockMvc.perform(put(urlUpdate, userId)
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(jsonUser))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(jsonUser))
                 .andExpect(status().isOk())
                 .andExpect(content().json(jsonUser));
         verify(userService, times(1)).update(userId, userDTO);
@@ -79,12 +80,60 @@ class UserRestControllerTest {
         String urlUpdate = URL_USERS + "/{userId}";
         String jsonUser = new ObjectMapper().writeValueAsString(userDTO);
         mockMvc.perform(put(urlUpdate, userId)
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(jsonUser))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(jsonUser))
                 .andExpect(status().isNotFound());
         verify(userService, times(1)).update(userId, userDTO);
     }
 
+    @Test
+    @DisplayName("Exception Handler test when Id CONFLICT for POST method.")
+    void exceptionHandlerWhenSaveAlreadyExists() throws Exception {
+        when(userService.save(any(UserDTO.class))).thenThrow(UserAlreadyExistsException.class);
+        UserDTO userDTO = new UserDTO();
+        String userJson = new ObjectMapper().writeValueAsString(userDTO);
+        mockMvc.perform(post(URL_USERS)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(userJson))
+                .andExpect(status().isConflict());
+        verify(userService, times(1)).save(userDTO);
+    }
 
+    @Test
+    @DisplayName("RestController rest for UserDTO GET method.")
+    void listAll() throws Exception {
+        mockMvc.perform(get(URL_USERS)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON));
+        verify(userService, times(1)).listAll();
+    }
+
+    @Test
+    @DisplayName("RestController rest for UserDTO GET/{userId} method.")
+    void getUserById() throws Exception {
+        Long userId = 3L;
+        UserDTO userDTO = UserDTO.builder().userId(userId).build();
+        String jsonUser = new ObjectMapper().writeValueAsString(userDTO);
+        when(userService.getById(anyLong())).thenReturn(userDTO);
+        String urlGetById = URL_USERS + "/{userId}";
+        mockMvc.perform(get(urlGetById, userId)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(content().json(jsonUser));
+        verify(userService, times(1)).getById(userId);
+    }
+
+    @Test
+    @DisplayName("Exception Handler test when Id NOT_FOUND for GET/{userId} method.")
+    void handleExceptionWhenGetByIdFails() throws Exception {
+        when(userService.getById(anyLong())).thenThrow(NoSuchElementException.class);
+        Long userId = 1L;
+        String urlGetById = URL_USERS + "/{userId}";
+        mockMvc.perform(get(urlGetById, userId)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNotFound());
+        verify(userService, times(1)).getById(userId);
+    }
 
 }

@@ -25,6 +25,7 @@ class AccountServiceImpl implements AccountService {
         }
         Account account = Account.of(accountDTO);
         account.setAccountId(null);
+        account.setType(AccountTypeEnum.REGULAR);
         log.info("save method of AccountServiceImpl ran successfully.");
         return Account.parseToDtoMono(accountRepository.save(account));
     }

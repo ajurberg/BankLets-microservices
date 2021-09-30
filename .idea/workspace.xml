@@ -4,14 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc9c00e-ddb3-4ab6-aa4e-385fe53e8eeb" name="Changes" comment="Small fix of transaction-service (TransactionRestController)">
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/test/java/br/com/letscode/userservice/user/UserRestControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c04fecb11177fea4465c36ab8bc94dd64d066a57" beforeDir="false" />
+    <list default="true" id="0bc9c00e-ddb3-4ab6-aa4e-385fe53e8eeb" name="Changes" comment="Test methods (partial) of user-service">
+      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/account/AccountTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/exception/IllegalTransactionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/0285f627c9933ab52d70d48554f5517dfbb3621a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/095257b3d2555bc794bdde5724fa19174506ca45" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b2f0b9e8ad217cfc13e55d36c35d3240627a650" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/122668e49508cd3269d814a9003538dc4668de9f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/1263917e1bcad1f220007c3b77d4c93e074266c9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1fa4b19c032e002f2c2338992fbba0461373d098" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1fefd6f01263419ee9f6a2a73d0f5affd45f3613" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/400756a7fcf969261fbfb71357ea9fb3523c1eed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6cba06d7eb440fe5206581f0928b91eafc07828e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/9663e9762625f77ca0ae7441f6bc1651fcd533ee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a823f283b8d33bafa82cecd70b04c3118b4ebf30" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/account/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/account/AccountDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/br/com/letscode/userservice/user/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/br/com/letscode/userservice/user/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/test/java/br/com/letscode/userservice/user/UserRestControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/br/com/letscode/userservice/user/UserRestControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +130,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -116,11 +138,17 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="debugger.dataViews" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.letscode.transactionservice.exception" />
+      <recent name="br.com.letscode.transactionservice.account" />
+      <recent name="br.com.letscode.transactionservice.transaction" />
       <recent name="br.com.letscode.eventservice.exception" />
       <recent name="br.com.letcode.banklets.exception" />
     </key>
@@ -140,7 +168,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+  <component name="RunManager" selected="Spring Boot.DiscoveryServerApplication">
     <configuration name="AccountServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="account-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.letcode.accountservice.AccountServiceApplication" />
@@ -215,7 +243,9 @@
       <workItem from="1631724354863" duration="2194000" />
       <workItem from="1631756342886" duration="5384000" />
       <workItem from="1631917146201" duration="7819000" />
-      <workItem from="1632058703753" duration="95329000" />
+      <workItem from="1632058703753" duration="103930000" />
+      <workItem from="1632943180901" duration="406000" />
+      <workItem from="1632946637000" duration="13925000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1631921179291</created>
@@ -329,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632598599279</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Test methods (partial) of user-service">
+      <created>1632796220107</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1632796220107</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +399,8 @@
     <MESSAGE value="Update of account-service and transaction-service" />
     <MESSAGE value="Fix of transaction-service (Controller and Service)" />
     <MESSAGE value="Small fix of transaction-service (TransactionRestController)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small fix of transaction-service (TransactionRestController)" />
+    <MESSAGE value="Test methods (partial) of user-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test methods (partial) of user-service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

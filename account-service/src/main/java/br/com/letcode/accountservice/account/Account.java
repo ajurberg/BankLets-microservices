@@ -35,6 +35,9 @@ class Account {
     private LocalDate openingDate;
     private LocalDate closingDate;
 
+    private LocalDate negativeBalanceDate;
+    private LocalDate positiveBalanceDate;
+
     private BigDecimal accountBalance;
     private Long userId;
 
@@ -43,7 +46,8 @@ class Account {
 
     static Account of(AccountDTO accountDTO) {
         var account = new Account(accountDTO.getAccountId(),accountDTO.getType(), accountDTO.getOpeningDate(),
-                accountDTO.getClosingDate(), accountDTO.getAccountBalance(), accountDTO.getUserId(),
+                accountDTO.getClosingDate(), accountDTO.getNegativeBalanceDate(), accountDTO.getPositiveBalanceDate(),
+                accountDTO.getAccountBalance(), accountDTO.getUserId(),
                 accountDTO.getStatus());
         if (account.closingDate != null ) {
             account.setStatus(AccountStatusEnum.ACTIVE);
@@ -56,8 +60,10 @@ class Account {
     }
 
     static AccountDTO parseToDtoMono(Account account) {
-        return new AccountDTO(account.getAccountId(), account.getType(), account.getAccountBalance(),
-                account.getUserId(), account.getOpeningDate(), account.getClosingDate(),
+        return new AccountDTO(account.getAccountId(), account.getType(),
+                account.getOpeningDate(), account.getAccountBalance(),
+                account.getNegativeBalanceDate(), account.getPositiveBalanceDate(),
+                account.getUserId(), account.getClosingDate(),
                 account.getStatus());
     }
 

@@ -23,6 +23,7 @@ class TransactionDTO implements Serializable {
     private static final long serialVersionUID = -7798816862560204775L;
 
     private Long id;
+    private TransactionTypeEnum type;
     private BigDecimal amount;
     private UserDTO user;
     private transient List<AccountDTO> accountList;

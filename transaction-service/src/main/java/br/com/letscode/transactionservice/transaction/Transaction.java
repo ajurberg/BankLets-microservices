@@ -26,6 +26,7 @@ class Transaction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private TransactionTypeEnum type;
     @NotNull
     private Long userId;
     private BigDecimal amount;

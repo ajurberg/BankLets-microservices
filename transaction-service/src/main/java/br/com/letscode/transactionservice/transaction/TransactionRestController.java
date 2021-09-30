@@ -53,29 +53,25 @@ class TransactionRestController {
         return transactionService.viewBalance(accountId);
     }
 
-    @PutMapping("deposit/{accountId}/{amount}")
+    @PutMapping("deposit/{accountId}")
     @ResponseStatus(HttpStatus.OK)
-    public void deposit(@PathVariable Long accountId,
-                        @PathVariable BigDecimal amount) {
+    public void deposit(@PathVariable Long accountId, @RequestBody TransactionDTO transactionDTO) {
         log.info("deposit method of accountRestController ran successfully.");
-        transactionService.deposit(accountId, amount);
+        transactionService.deposit(accountId, transactionDTO.getAmount());
     }
 
-    @PutMapping("withdraw/{accountId}/{amount}")
+    @PutMapping("withdraw/{accountId}/")
     @ResponseStatus(HttpStatus.OK)
-    public void withdraw(@PathVariable Long accountId,
-                         @PathVariable BigDecimal amount) {
+    public void withdraw(@PathVariable Long accountId, @RequestBody TransactionDTO transactionDTO) {
         log.info("withdraw method of accountRestController ran successfully.");
-        transactionService.withdraw(accountId, amount);
+        transactionService.withdraw(accountId, transactionDTO.getAmount());
     }
 
-    @PutMapping("transfer/{withdrawalAccountId}/{receivingAccountId}/{amount}")
+    @PutMapping("transfer/{accountId}/")
     @ResponseStatus(HttpStatus.OK)
-    public void transfer(@PathVariable Long withdrawalAccountId,
-                         @PathVariable Long receivingAccountId,
-                         @PathVariable BigDecimal amount) {
+    public void transfer(@PathVariable Long accountId, @RequestBody TransactionDTO transactionDTO) {
         log.info("transfer method of accountRestController ran successfully.");
-        transactionService.transfer(withdrawalAccountId, receivingAccountId, amount);
+        transactionService.transfer(accountId, transactionDTO.getAccountList().get(1).getAccountId(), transactionDTO.getAmount());
     }
 
 }

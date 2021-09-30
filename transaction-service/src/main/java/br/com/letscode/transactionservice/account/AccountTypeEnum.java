@@ -1,4 +1,4 @@
-package br.com.letcode.accountservice.account;
+package br.com.letscode.transactionservice.account;
 
 public enum AccountTypeEnum {
     REGULAR, OVERDRAFT
