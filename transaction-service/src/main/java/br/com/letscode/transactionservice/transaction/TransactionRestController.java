@@ -31,11 +31,13 @@ class TransactionRestController {
     }
 
     @PutMapping("/{transactionId}")
+    @ResponseStatus(HttpStatus.OK)
     public TransactionDTO update(@PathVariable Long transactionId, @RequestBody TransactionDTO transactionDTO) {
         return transactionService.update(transactionId, transactionDTO);
     }
 
     @GetMapping
+    @ResponseStatus(HttpStatus.OK)
     public List<TransactionDTO> listAll() {
         return transactionService.listAll();
     }
@@ -60,14 +62,14 @@ class TransactionRestController {
         transactionService.deposit(accountId, transactionDTO.getAmount());
     }
 
-    @PutMapping("withdraw/{accountId}/")
+    @PutMapping("withdraw/{accountId}")
     @ResponseStatus(HttpStatus.OK)
     public void withdraw(@PathVariable Long accountId, @RequestBody TransactionDTO transactionDTO) {
         log.info("withdraw method of accountRestController ran successfully.");
         transactionService.withdraw(accountId, transactionDTO.getAmount());
     }
 
-    @PutMapping("transfer/{accountId}/")
+    @PutMapping("transfer/{accountId}")
     @ResponseStatus(HttpStatus.OK)
     public void transfer(@PathVariable Long accountId, @RequestBody TransactionDTO transactionDTO) {
         log.info("transfer method of accountRestController ran successfully.");

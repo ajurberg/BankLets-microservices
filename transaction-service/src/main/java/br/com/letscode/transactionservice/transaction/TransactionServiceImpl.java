@@ -78,22 +78,22 @@ public class TransactionServiceImpl implements TransactionService {
         AccountDTO accountDTO = accountClientRepository.getById(accountId);
         switch (transactionDTO.getType()) {
             case REGULAR:
-                log.info("Deposit completed upon regular transaction.");
+                log.info("Deposit completed by regular transaction.");
                 validadeDeposit(accountId, amount, accountDTO);
                 accountClientRepository.save(accountDTO.getAccountId());
                 break;
             case PIX:
-                log.info("Deposit completed upon PIX transaction.");
+                log.info("Deposit completed by PIX transaction.");
                 validadeDeposit(accountId, amount, accountDTO);
                 accountClientRepository.save(accountDTO.getAccountId());
                 break;
             case TED_DOC:
-                log.info("Deposit completed upon TED/DOC transaction.");
+                log.info("Deposit completed by TED/DOC transaction.");
                 validadeDeposit(accountId, amount, accountDTO);
                 accountClientRepository.save(accountDTO.getAccountId());
                 break;
             case CELL_PHONE_RECHARGE:
-                log.info("Transaction of cell phone recharge.");
+                throw new IllegalTransactionException("Illegal operation.");
         }
     }
 
@@ -103,20 +103,20 @@ public class TransactionServiceImpl implements TransactionService {
         AccountDTO accountDTO = accountClientRepository.getById(accountId);
         switch (transactionDTO.getType()) {
             case REGULAR:
-                log.info("Withdraw completed upon regular transaction.");
+                log.info("Withdraw completed by regular transaction.");
                 validateWithdraw(amount, accountDTO);
                 accountClientRepository.save(accountDTO.getAccountId());
                 break;
             case PIX:
-                log.info("Withdraw completed upon PIX transaction.");
+                log.info("Withdraw completed by PIX transaction.");
                 accountClientRepository.save(accountDTO.getAccountId());
                 break;
             case TED_DOC:
-                log.info("Withdraw completed upon TED/DOC transaction.");
+                log.info("Withdraw completed by TED/DOC transaction.");
                 accountClientRepository.save(accountDTO.getAccountId());
                 break;
             case CELL_PHONE_RECHARGE:
-                throw new IllegalTransactionException("Illegal operation.");
+                log.info("Transaction of cell phone recharge.");
         }
     }
 

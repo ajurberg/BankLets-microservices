@@ -4,35 +4,94 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc9c00e-ddb3-4ab6-aa4e-385fe53e8eeb" name="Changes" comment="Test methods (partial) of user-service">
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/account/AccountTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/exception/IllegalTransactionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionTypeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/0285f627c9933ab52d70d48554f5517dfbb3621a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/095257b3d2555bc794bdde5724fa19174506ca45" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b2f0b9e8ad217cfc13e55d36c35d3240627a650" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/122668e49508cd3269d814a9003538dc4668de9f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/1263917e1bcad1f220007c3b77d4c93e074266c9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1fa4b19c032e002f2c2338992fbba0461373d098" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1fefd6f01263419ee9f6a2a73d0f5affd45f3613" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/400756a7fcf969261fbfb71357ea9fb3523c1eed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6cba06d7eb440fe5206581f0928b91eafc07828e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/9663e9762625f77ca0ae7441f6bc1651fcd533ee" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a823f283b8d33bafa82cecd70b04c3118b4ebf30" beforeDir="false" />
+    <list default="true" id="0bc9c00e-ddb3-4ab6-aa4e-385fe53e8eeb" name="Changes" comment="Update of user-service, account-service, and transaction-service.">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/0054d4df2220c1ab8b09428a276cf7021b63e9ce" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/091a47854bcf7e687cdf00793e74269697115048" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/1271a1a028b082332efc44218d5baec58e975db6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/15353ff8b9fb841708d2fd96f71c7e5fffab8658" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c5698602674c71d10f55eb65363391c214b9d09" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2bc5f8ef5c60fd93d2a9c4f09a1c2e909379db72" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/359dc9b9caa6001efce683396e2f819d94003662" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d8904a806d31e6fba705a50bb7b4a2c46b65955" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/4610724a4b25bbfab05e7f5bf18db4107fe4b805" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/47790c5f5cdfef79209c3c4ee80dff4f183d16e6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4bcac39fe3d9b8cfd14d45be6f49c8a797104573" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/c/4c64c670eaef2f68b75a2966b6bdd02437e10a22" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4fd9e6217cccb133ab370e947e2f744c8d4a9145" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/3/537a3844a664bed83e14c4d0bc83dc89d5f9b22c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5aeffe7d3afb8668ad5bb4f929df144fc648a639" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5f2eb6d1c4f42bb7fef3eaa7ed09b4891e097253" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/63ee1c8d6d94372b4227afa850815ddbaa1ba9d3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6a1784ce257c58096a928ace2a17400b0068114f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6a96da43032583fa07e850370b6bede79b4c8608" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6fe4009ee9c6103cee2c1af4930e1161139424cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/3/734883065b18db1d1f13a184a82d9707c2c67454" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/79840e465be6432bb0f0ad0a4c27842b55c62e55" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/a/7a33feb1569d3ac05bcaa7e2754eefddc9b563f8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/c/7ca2bdc060e91d20667a7ca9c7ea9cef7a54fc48" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7d28823feb9d061e55bb62ca2b73b1c6a789afff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/80800d93d4117f16cb373092d225f9b68fe9c015" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/9623bb18d4d1adade3bf41144f68a78db6d7840d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9cc31e7c725729a53f6898c773cf18850433060c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9ecc3f12168c20b04866bdd6b25e951ac85a16b4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a0ae47eb49e3356063344789a042c1f7ee057e8c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/accbeccea420d9f3ce9d4c58ddb4c0ed1c96ae9f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b60fb251bd69fe5491b46083ad8231aec4c277dd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c04fecb11177fea4465c36ab8bc94dd64d066a57" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c3e5730be023776fcd5258e359433fbcf7177d50" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c48f73b35e0e28d5a150dc8f9360799be597f908" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c817276918bef6d3d61490fb6adfcbc461a91b18" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/ce73bee7895c47423ec801321ee1e43c3c726e61" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/f/cfb4506275ea53b9624a9b005323f913deb53a34" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d155f2716708335eba8e86b8dc837aad0a5c9a74" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d23e9158333941a4bd0f4545064d01a3d86113f6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d2f5d1978e5f519100a679c4109f89296278badc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d65d85bda95286eaa5f4011c5c8758ea34e60134" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d6fcc5586c643313cf63a9e2b406125b4851d759" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d7f361e55f623f40ca62419e6fbb628d2d4a939c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da23e9fc3ebcdb5da4a6188534dec0357f34a1b9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/db6d3f2a929954ba0393015508aedce7c81f8ec1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dd4e729fefff6120d43bf48cd7c3b176c4a07f2c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e6111f1a68036a0391d34f21619ceccba1767ca6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e617d66a7be86912604686eab80583bbfab67455" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-login/src/main/java/br/com/letscode/securitylogin/login/DetailedLoginData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-login/src/main/java/br/com/letscode/securitylogin/login/DetailedLoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-login/src/main/java/br/com/letscode/securitylogin/login/JWTAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-login/src/main/java/br/com/letscode/securitylogin/login/JWTConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-login/src/main/java/br/com/letscode/securitylogin/login/JWTValidationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-login/src/main/java/br/com/letscode/securitylogin/login/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-login/src/main/java/br/com/letscode/securitylogin/login/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-login/src/main/java/br/com/letscode/securitylogin/login/LoginRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-login/src/main/java/br/com/letscode/securitylogin/login/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-login/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_12_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_12_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a234c981656300126ce52ba5d245db9b0825e4d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1378869ff2e9e7ab602092a82de08a23a6c93f3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountTypeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/account/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/account/AccountDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/br/com/letcode/accountservice/account/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-login/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security-login/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-login/src/main/java/br/com/letscode/securitylogin/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-login/src/main/java/br/com/letscode/securitylogin/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-login/src/main/java/br/com/letscode/securitylogin/login/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-login/src/main/java/br/com/letscode/securitylogin/SecurityLoginApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-login/src/main/java/br/com/letscode/securitylogin/SecurityLoginApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-login/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security-login/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/br/com/letscode/transactionservice/transaction/TransactionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/br/com/letscode/userservice/user/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/br/com/letscode/userservice/user/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/test/java/br/com/letscode/userservice/user/UserRestControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/br/com/letscode/userservice/user/UserRestControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +128,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -102,12 +161,8 @@
       </map>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="workOffline" value="true" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="1y6yqoS6A0H1LAdG1HL3E2k3bia" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -119,6 +174,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -139,18 +195,18 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="debugger.dataViews" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.letscode.securitylogin" />
+      <recent name="br.com.letscode.securitylogin.exception" />
       <recent name="br.com.letscode.transactionservice.exception" />
       <recent name="br.com.letscode.transactionservice.account" />
       <recent name="br.com.letscode.transactionservice.transaction" />
-      <recent name="br.com.letscode.eventservice.exception" />
-      <recent name="br.com.letcode.banklets.exception" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Arnon\Courses\Cursados\2021 UCode-Let'sCode\BankLets\" />
@@ -168,7 +224,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DiscoveryServerApplication">
+  <component name="RunManager" selected="Spring Boot.SecurityLoginApplication">
     <configuration name="AccountServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="account-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.letcode.accountservice.AccountServiceApplication" />
@@ -197,6 +253,9 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.letscode.securitylogin.SecurityLoginApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <envs>
+        <env name="SQL_PASS" value="D@taB4se" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -245,7 +304,8 @@
       <workItem from="1631917146201" duration="7819000" />
       <workItem from="1632058703753" duration="103930000" />
       <workItem from="1632943180901" duration="406000" />
-      <workItem from="1632946637000" duration="13925000" />
+      <workItem from="1632946637000" duration="14239000" />
+      <workItem from="1632977815203" duration="37268000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1631921179291</created>
@@ -366,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632796220107</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Update of user-service, account-service, and transaction-service.">
+      <created>1632977580033</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1632977580033</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +467,8 @@
     <MESSAGE value="Fix of transaction-service (Controller and Service)" />
     <MESSAGE value="Small fix of transaction-service (TransactionRestController)" />
     <MESSAGE value="Test methods (partial) of user-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test methods (partial) of user-service" />
+    <MESSAGE value="Update of user-service, account-service, and transaction-service." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update of user-service, account-service, and transaction-service." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

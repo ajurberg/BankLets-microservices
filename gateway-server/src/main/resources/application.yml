@@ -2,15 +2,17 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: gateway-server
   cloud:
     gateway:
       routes:
         - id: login-service
-            uri: lb://login-service
-            predicates:
-              - Path=/logins/**
-            filters:
-              - RewritePath=/(?<logins>.*), /$\{logins}
+          uri: lb://login-service
+          predicates:
+            - Path=/logins/**
+          filters:
+            - RewritePath=/(?<logins>.*), /$\{logins}
 
         - id: account-service
           uri: lb://account-service
@@ -32,10 +34,6 @@ spring:
             - Path=/events/**
           filters:
             - RewritePath=/(?<transactions>.*), /$\{transactions}
-
-  application:
-    name: gateway
-
 
 management:
   endpoints:
