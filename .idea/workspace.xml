@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc9c00e-ddb3-4ab6-aa4e-385fe53e8eeb" name="Changes" comment="Update of user-service, account-service, and transaction-service.">
-      <change beforePath="$PROJECT_DIR$/security-login/src/main/java/br/com/letscode/securitylogin/login/SecurityConfig.java" beforeDir="false" />
+    <list default="true" id="0bc9c00e-ddb3-4ab6-aa4e-385fe53e8eeb" name="Changes" comment="Fix of security-login">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +139,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SecurityLoginApplication">
+  <component name="RunManager" selected="Spring Boot.GatewayServerApplication">
     <configuration name="AccountServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="account-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.letcode.accountservice.AccountServiceApplication" />
@@ -219,7 +220,7 @@
       <workItem from="1632058703753" duration="103930000" />
       <workItem from="1632943180901" duration="406000" />
       <workItem from="1632946637000" duration="14239000" />
-      <workItem from="1632977815203" duration="37585000" />
+      <workItem from="1632977815203" duration="37916000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1631921179291</created>
@@ -354,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633128067064</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Fix of security-login">
+      <created>1633128411736</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1633128411736</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +397,8 @@
     <MESSAGE value="Small fix of transaction-service (TransactionRestController)" />
     <MESSAGE value="Test methods (partial) of user-service" />
     <MESSAGE value="Update of user-service, account-service, and transaction-service." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update of user-service, account-service, and transaction-service." />
+    <MESSAGE value="Fix of security-login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix of security-login" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
